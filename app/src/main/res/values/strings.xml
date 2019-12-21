@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LetsChat</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="emaillogin">Email Login</string>
+    <string name="login">Login</string>
+    <string name="manage_serve_clients_with_ease"><![CDATA[Manage & Serve Clients With Ease!]]></string>
+    <string name="client_manager">Client Manager</string>
+    <string name="register">Register</string>
+
+    <string name="reset_pass_message">Seems like you forgot your password for LetsChat. If this is true, click below to reset your password.</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload">Upload</string>
+    <string name="continuest">Continue</string>
+</resources>

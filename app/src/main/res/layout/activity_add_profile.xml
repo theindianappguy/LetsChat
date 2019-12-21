@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:id="@+id/proofImgView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ProgressBar
+                android:id="@+id/proofProgressBar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proof_loading"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_proofImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:background="@drawable/circular_borderbtn"
+                android:paddingStart="@dimen/medium"
+                android:paddingTop="@dimen/small"
+                android:paddingEnd="@dimen/medium"
+                android:paddingBottom="@dimen/small"
+                android:text="@string/select_image"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/upload_proofImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:background="@drawable/circularblue_borderbtn"
+                android:paddingStart="@dimen/medium"
+                android:paddingTop="@dimen/small"
+                android:paddingEnd="@dimen/medium"
+                android:paddingBottom="@dimen/small"
+                android:text="@string/upload"
+                android:textColor="#00A9E0" />
+        </LinearLayout>
+
+        <!--Add Status-->
+        <RelativeLayout
+            android:id="@+id/facebookLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/dark_circularborderbtn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgEmail"
+                android:paddingLeft="@dimen/medium"
+                android:background="@android:color/transparent"
+                android:hint="Add Status"
+                android:paddingTop="@dimen/small"
+                android:paddingBottom="@dimen/small"
+                android:paddingEnd="@dimen/small"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:background="@drawable/circular_borderbtn_fill"
+            android:paddingStart="@dimen/medium"
+            android:paddingTop="@dimen/small"
+            android:paddingEnd="@dimen/medium"
+            android:paddingBottom="@dimen/small"
+            android:text="@string/continuest"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
